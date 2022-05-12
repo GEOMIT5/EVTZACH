@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- Title here -->
+		<title>Онлайни Магазин</title>
+		  <meta name="keywords" content="доставка букетов, заказ букетов доставка, доставка букетов цветов, доставка букетов Минск, заказ цветов доставка букетов, доставка букетов, школа флористики,флористы, флористы Минск.">
+    <meta name="description" content="Интернет магазин цветов.  Доставка букетов цветов на заказ. Заказ букетов и доставка цветов Минск.">
+		<meta name="author" content="Ziganshina Alfiya">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        
+        
+         <!-- Styles -->
+        <style>
+		
+		
+		
+		/* Portfolio */
+.portfolio {
+	margin-top: 20px;
+}
+.portfolio .col-md-3{
+	
+	margin-right: 0;
+	margin-left: 0;
+}
+.portfolio > figure {
+	position: relative;
+	overflow: hidden;
+}
+.portfolio > figure img {
+	max-width: 100%;
+	display: block;
+}
+.portfolio figcaption {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	left: 0;
+	top: 0;
+
+	background-color: rgba(58,63,67,.8);
+	padding: 10%;
+
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+
+	-webkit-transition: all 350ms;
+	-moz-transition: all 350ms;
+	-o-transition: all 350ms;
+	transition: all 350ms;
+}
+.portfolio figcaption h4 {
+	color: #fff;
+}
+.portfolio figcaption p {
+	font-size: 0.929em;
+	color: #fff;
+}
+.portfolio > figure:hover figcaption {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+}
+		
+		
+/* Navgation */
+.nav-menu, 
+.portfolio > figure.col-md-3{
+	display: none;
+}
+label {
+	padding: 5px 10px;
+	color: #3a3f43;
+	cursor: pointer;
+	display: inline-block;
+}
+.nav-menu:checked + label {
+	color: #fff;
+	background-color: #eb2029;
+	border-radius: 3px;
+}
+#all:checked ~ .portfolio .all,
+#posters:checked ~ .portfolio .poster,
+#bouqets:checked ~ .portfolio .bouqet,
+#typography:checked ~ .portfolio .typography,
+#packaging:checked ~ .portfolio .package {
+	display: block;
+}		
+	
+	
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	label {
+		display: none;
+	}
+
+	.container1 {
+		width: 100%;
+	}
+
+	.portfolio .col-md-3 { 
+    	width: 25%;
+    }
+	.portfolio .all {
+		margin-bottom: 15px;
+	}
+	.portfolio > figure:before {
+		content: attr(data-category);
+		font-size: 1em;
+		padding: 8px;
+		width: 100%;
+		color: #fff;
+		display: block;
+		font-weight: bold;
+		text-transform: capitalize;
+		background-color: rgba(42,47,51,0.8);
+		position: absolute;
+	}
+	.portfolio figcaption {
+		position: relative;
+		opacity: 1;
+
+		-webkit-transform: translateX(0%);
+		-moz-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+		-o-transform: translateX(0%);
+		transform: translateX(0%);
+
+		background-color: #3a3f43;
+	}
+	.portfolio figure:nth-child(odd) figcaption {
+		background-color: #2a2f33;
+	}
+	
+	
+	
+	
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .portfolio .col-md-3 { 
+    	width: 50%;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+    .portfolio .col-md-3  { 
+    	width: 100%;
+    }
+ 
+  
+
+	
+	
+		
+		
+		</style>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		<!-- Styles -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+		<link href="css/settings.css" rel="stylesheet">		
+		<!-- Custom CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		<!--[if IE]><link rel="stylesheet" href="css/ie-style.css"><![endif]-->
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="index.html#">
+	</head>
+	
+	<body>
+		
+			
+		<!-- Shopping cart Modal -->
+		<div class="modal fade" id="shoppingcart1" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Корзина</h4>
+					</div>
+					<div class="modal-body">
+						<!-- Items table -->
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Наименование</th>
+									<th>Количество</th>
+									<th>Цена</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="index.html#">Букет "Весна"</a></td>
+									<td>1</td>
+									<td>115 р</td>
+								</tr>
+								<tr>
+									<td><a href="index.html#">Букет "Кудряшка Сью"</a></td>
+									<td>1</td>
+									<td>166,50 руб</td>
+								</tr>
+								<tr>
+									<td><a href="index.html#">Букет для невесты</a></td>
+									<td>1</td>
+									<td>175,00 руб</td>
+								</tr>
+								<tr>
+									<th></th>
+									<th>Всего</th>
+									<th>456,5 р</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
+						<button type="button" class="btn btn-info"><a href="checkout.html">Оформить заказ </a></button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<!-- Model End -->
+		
+		<!-- Page Wrapper -->
+		<div class="wrapper">
+		
+			<!-- Header Start -->
+			
+			<div class="header">
+				<div class="container">
+					<!-- Header top area content -->
+					<div class="header-top">
+						<div class="row">
+							<div class="col-md-4 col-sm-4">
+								<!-- Header top left content contact -->
+								<div class="header-contact">
+									<!-- Contact number -->
+									<span> <i class="fa fa-phone red"></i>+8(029)321-75-99</span>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<!-- Header top right content search box -->
+								<div class=" header-search">
+									<form class="form" role="form">
+										<div class="input-group">
+										  <input type="text" class="form-control" placeholder="Поиск...">
+										  <span class="input-group-btn">
+											<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+										  </span>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<!-- Button Kart -->
+								<div class="btn-cart-md">
+									<a class="cart-link" href="index.html#">
+                                  
+
+										<!-- Image -->
+										<img class="img-responsive" src="img/cart.png" alt="" /> 
+										<!-- Heading -->
+										<h4>Корзина</h4>
+										<span>3 товара 489 р</span>
+										<div class="clearfix"></div>
+									</a>
+									<ul class="cart-dropdown" role="menu">
+										<li>	
+											<!-- Cart items for shopping list -->
+											<div class="cart-item">
+												<!-- Item remove icon -->
+												<a href="index.html#"><i class="fa fa-times"></i></a>
+												<!-- Image -->
+												<img class="img-responsive img-rounded" src="img/nav-menu/nav1.jpg" alt="" />
+												<!-- Title for purchase item -->
+												<span class="cart-title"><a href="index.html#">Букет "Весна"</a></span>
+												<!-- Cart item price -->
+												<span class="cart-price pull-right red">115,00 руб</span>
+												<div class="clearfix"></div>
+											</div>
+										</li>
+										<li>
+											<!-- Cart items for shopping list -->
+											<div class="cart-item">
+												<!-- Item remove icon -->
+												<a href="index.html#"><i class="fa fa-times"></i></a>
+												<!-- Image -->
+												<img class="img-responsive img-rounded" src="img/nav-menu/nav2.jpg" alt="" />
+												<!-- Title for purchase item -->
+												<span class="cart-title"><a href="index.html#">Букет "Кудряшка Сью"</a></span>
+												<!-- Cart item price -->
+												<span class="cart-price pull-right red">166,50 руб</span>
+												<div class="clearfix"></div>
+											</div>
+										</li>
+										<li>
+											<!-- Cart items for shopping list -->
+											<div class="cart-item">
+												<!-- Item remove icon -->
+												<a href="index.html#"><i class="fa fa-times"></i></a>
+												<!-- Image -->
+												<img class="img-responsive img-rounded" src="img/nav-menu/nav3.jpg" alt="" />
+												<!-- Title for purchase item -->
+												<span class="cart-title"><a href="index.html#">Букет для невесты</a></span>
+												<!-- Cart item price -->
+												<span class="cart-price pull-right red">175,00 руб</span>
+												<div class="clearfix"></div>
+											</div>
+										</li>
+										<li>
+											<!-- Cart items for shopping list -->
+											<div class="cart-item">
+												<a class="btn btn-danger" data-toggle="modal" href="index.html#shoppingcart1">Оформить заказ</a>
+											</div>
+										</li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-5">
+							<!-- Link -->
+						<a href="index.html">
+								<!-- Logo area -->
+								<div class="logo">
+									<img class="img-responsive" src="img/logo.png" alt="" />
+									<!-- Heading -->
+								<h1></h1>
+									<!-- Paragraph -->
+									<p>Facility ester expedite instinct.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-8 col-sm-7">
+							<!-- Navigation -->
+							<nav class="navbar navbar-default navbar-right" role="navigation">
+								<div class="container-fluid">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+											
+										<li> <a href="items.html">Магазин</a></li>
+										<li> <a href="gallery.html">Портфолио</a></li>
+																
+											<li><a href="aboutus.html"> Флористы</a></li>
+										</ul>
+									</div><!-- /.navbar-collapse -->
+								</div><!-- /.container-fluid -->
+							</nav>
+						</div>
+					</div>
+				</div> <!-- / .container -->
+			</div>
+			
+			<!-- Header End -->
+			
+		
+			
+			
+			<!-- Inner Content -->
+			<div class="inner-page padd">
+				
+				<!-- Shopping Start -->
+				
+				<div class="shopping">
+					<div class="container">
+						<!-- Shopping items content -->
+						<div class="shopping-content">
+							<div class="row">
+								<div class="col-md-3 col-sm-6">
+									<!-- Shopping items -->
+									<div class="shopping-item">
+										<!-- Image -->
+										<a href="item-single.html"><img class="img-responsive" src="img/shopping/shop1.jpg" alt="" /></a>
+										<!-- Shopping item name / Heading -->
+										<h4 class="pull-left"><a href="item-single.html">Quasi Architects</a></h4>
+										<span class="item-price pull-right">руб49</span>
+										<div class="clearfix"></div>
+										<!-- Paragraph -->
+										<p>Lorem ipsum dolor sit amet, conse ctetur adipis cicing elit.</p>
+										<!-- Buy now button -->
+										<div class="visible-xs">
+											<a class="btn btn-danger btn-sm" href="items.html#">Купить сейчас</a>
+										</div>
+										<!-- Shopping item hover block & link -->
+										<div class="item-hover br-red hidden-xs"></div>
+										<a class="link hidden-xs" href="items.html#">В корзину</a>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<!-- Shopping items -->
+									<div class="shopping-item">
+										<!-- Image -->
+										<a href="item-single.html"><img class="img-responsive" src="img/shopping/shop2.jpg" alt="" /></a>
+										<!-- Shopping item name / Heading -->
+										<h4 class="pull-left"><a href="item-single.html">Byances Kcepte</a></h4>
+										<span class="item-price pull-right">руб31</span>
+										<div class="clearfix"></div>
+										<!-- Paragraph -->
+										<p>Lorem ipsum dolor sit amet, conse ctetur adipis cicing elit.</p>
+										<!-- Buy now button -->
+										<div class="visible-xs">
+											<a class="btn btn-danger btn-sm" href="items.html#">Купить сейчас</a>
+										</div>
+										<!-- Shopping item hover block & link -->
+										<div class="item-hover br-red hidden-xs"></div>
+										<a class="link hidden-xs" href="items.html#">В корзину</a>
+										<!-- Hot tag -->
+										<span class="hot-tag br-red">Hot</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<!-- Shopping items -->
+									<div class="shopping-item">
+										<!-- Image -->
+										<a href="item-single.html"><img class="img-responsive" src="img/shopping/shop3.jpg" alt="" /></a>
+										<!-- Shopping item name / Heading -->
+										<h4 class="pull-left"><a href="item-single.html">Cepturi Sintocc</a></h4>
+										<span class="item-price pull-right">руб29</span>
+										<div class="clearfix"></div>
+										<!-- Paragraph -->
+										<p>Lorem ipsum dolor sit amet, conse ctetur adipis cicing elit.</p>
+										<!-- Buy now button -->
+										<div class="visible-xs">
+											<a class="btn btn-danger btn-sm" href="items.html#">Купить сейчас</a>
+										</div>
+										<!-- Shopping item hover block & link -->
+										<div class="item-hover br-red hidden-xs"></div>
+										<a class="link hidden-xs" href="items.html#">В корзину</a>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<!-- Shopping items -->
+									<div class="shopping-item">
+										<!-- Image -->
+										<a href="item-single.html"><img class="img-responsive" src="img/shopping/shop4.jpg" alt="" /></a>
+										<!-- Shopping item name / Heading -->
+										<h4 class="pull-left"><a href="item-single.html">Excepteur Sint</a></h4>
+										<span class="item-price pull-right">руб21</span>
+										<div class="clearfix"></div>
+										<!-- Paragraph -->
+										<p>Lorem ipsum dolor sit amet, conse ctetur adipis cicing elit.</p>
+										<!-- Buy now button -->
+										<div class="visible-xs">
+											<a class="btn btn-danger btn-sm" href="items.html#">Купить сейчас</a>
+										</div>
+										<!-- Shopping item hover block & link -->
+										<div class="item-hover br-red hidden-xs"></div>
+										<a class="link hidden-xs" href="items.html#">В корзину</a>
+										<!-- Hot tag -->
+										<span class="hot-tag br-lblue">Mm</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<!-- Shopping items -->
+									<div class="shopping-item">
+										<!-- Image -->
+										<a href="item-single.html"><img class="img-responsive" src="img/shopping/shop5.jpg" alt="" /></a>
+										<!-- Shopping item name / Heading -->
+										<h4 class="pull-left"><a href="item-single.html">Occam Cupid</a></h4>
+										<span class="item-price pull-right">руб15</span>
+										<div class="clearfix"></div>
+										<!-- Paragraph -->
+										<p>Lorem ipsum dolor sit amet, conse ctetur adipis cicing elit.</p>
+										<!-- Buy now button -->
+										<div class="visible-xs">
+											<a class="btn btn-danger btn-sm" href="items.html#">Купить сейчас</a>
+										</div>
+										<!-- Shopping item hover block & link -->
+										<div class="item-hover br-red hidden-xs"></div>
+										<a class="link hidden-xs" href="items.html#">В корзину</a>
+										<!-- Hot tag -->
+										<span class="hot-tag br-red">New</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<!-- Shopping items -->
+									<div class="shopping-item">
+										<!-- Image -->
+										<a href="item-single.html"><img class="img-responsive" src="img/shopping/shop6.jpg" alt="" /></a>
+										<!-- Shopping item name / Heading -->
+										<h4 class="pull-left"><a href="item-single.html">Fugiat Nulla</a></h4>
+										<span class="item-price pull-right">руб25</span>
+										<div class="clearfix"></div>
+										<!-- Paragraph -->
+										<p>Lorem ipsum dolor sit amet, conse ctetur adipis cicing elit.</p>
+										<!-- Buy now button -->
+										<div class="visible-xs">
+											<a class="btn btn-danger btn-sm" href="items.html#">Купить сейчас</a>
+										</div>
+										<!-- Shopping item hover block & link -->
+										<div class="item-hover br-red hidden-xs"></div>
+										<a class="link hidden-xs" href="items.html#">В корзину</a>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<!-- Shopping items -->
+									<div class="shopping-item">
+										<!-- Image -->
+										<a href="item-single.html"><img class="img-responsive" src="img/shopping/shop7.jpg" alt="" /></a>
+										<!-- Shopping item name / Heading -->
+										<h4 class="pull-left"><a href="item-single.html">Eos Qui Ratione</a></h4>
+										<span class="item-price pull-right">руб43</span>
+										<div class="clearfix"></div>
+										<!-- Paragraph -->
+										<p>Lorem ipsum dolor sit amet, conse ctetur adipis cicing elit.</p>
+										<!-- Buy now button -->
+										<div class="visible-xs">
+											<a class="btn btn-danger btn-sm" href="items.html#">Купить сейчас</a>
+										</div>
+										<!-- Shopping item hover block & link -->
+										<div class="item-hover br-red hidden-xs"></div>
+										<a class="link hidden-xs" href="items.html#">В корзину</a>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<!-- Shopping items -->
+									<div class="shopping-item">
+										<!-- Image -->
+										<a href="item-single.html"><img class="img-responsive" src="img/shopping/shop8.jpg" alt="" /></a>
+										<!-- Shopping item name / Heading -->
+										<h4 class="pull-left"><a href="item-single.html">Natus Erwor Site</a></h4>
+										<span class="item-price pull-right">руб19</span>
+										<div class="clearfix"></div>
+										<!-- Paragraph -->
+										<p>Lorem ipsum dolor sit amet, conse ctetur adipis cicing elit.</p>
+										<!-- Buy now button -->
+										<div class="visible-xs">
+											<a class="btn btn-danger btn-sm" href="items.html#">Купить сейчас</a>
+										</div>
+										<!-- Shopping item hover block & link -->
+										<div class="item-hover br-red hidden-xs"></div>
+										<a class="link hidden-xs" href="items.html#">В корзину</a>
+										<!-- Hot tag -->
+										<span class="hot-tag br-green">New</span>
+									</div>
+								</div>
+							</div>
+							<!-- Pagination -->
+							<div class="shopping-pagination">
+								<ul class="pagination">
+									<li class="disabled"><a href="items.html#">&laquo;</a></li>
+									<li class="active"><a href="items.html#">1 <span class="sr-only">(current)</span></a></li>
+									<li><a href="items.html#">2</a></li>
+									<li><a href="items.html#">3</a></li>
+									<li><a href="items.html#">4</a></li>
+									<li><a href="items.html#">5</a></li>
+									<li><a href="items.html#">&raquo;</a></li>
+								</ul>
+							</div>
+							<!-- Pagination end-->
+						</div>
+					</div>
+				</div>
+				
+				<!-- Shopping End -->
+			
+			
+				
+			</div><!-- / Inner Page Content End -->	
+			
+			<!-- Footer Start -->
+			
+			<div class="footer padd">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<!-- Footer widget -->
+							<div class="footer-widget">
+								
+								
+								<!-- Heading -->
+								<h4>Способы оплаты и доставка</h4>
+								<!-- Images -->
+								
+								<a href="index.html#"><img class="payment img-responsive" src="img/payment/mastercard.gif" alt="" /></a>
+								<a href="index.html#"><img class="payment img-responsive" src="img/payment/paypal.gif" alt="" /></a>
+								<a href="index.html#"><img class="payment img-responsive" src="img/payment/visa.gif" alt="" /></a>
+								<a href="index.html#"><img class="payment img-responsive" src="img/payment/worldpay.gif" alt="" /></a>
+							</div> <!--/ Footer widget end -->
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<!-- Footer widget -->
+							<div class="footer-widget">
+								<!-- Heading -->
+								<h4>Интерьер магазина</h4>
+								<!-- Images -->
+                                
+                                
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter1.jpg" alt="" /></a>
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter2.jpg" alt="" /></a>
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter3.jpg" alt="" /></a>
+                                <a href="index.html#"><img class="dish img-responsive" src="img/dish/inter1.jpg" alt="" /></a>
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter2.jpg" alt="" /></a>
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter3.jpg" alt="" /></a>
+							
+							</div> <!--/ Footer widget end -->
+						</div>
+						<div class="clearfix visible-sm"></div>
+						<div class="col-md-4 col-sm-6">
+							
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<!-- Footer widget -->
+							<div class="footer-widget">
+								<!-- Heading -->
+								<h4>Контакты</h4>
+								<div class="contact-details">
+									<!-- Address / Icon -->
+                                    <address>
+  <strong><h3>Цветы большого города</h3></strong><br>
+  220000, г.Минск, ул.Пушкина,13 <br>
+ <br>
+ 
+  <abbr title="Phone">Телефон</abbr> +8(029)321-75-99
+} 
+</address>
+
+<address>
+  <strong>Митенёв Георгий</strong><br>
+  <a href="mailto:#">mitenev@gmail.com</a>
+</address>
+									
+						</div>
+					</div>
+					<!-- Copyright -->
+					<div class="footer-copyright">
+						<!-- Paragraph -->
+                        <div class="social">	
+		
+						<p>&copy; Copyright 2022 <a href="index.html#">Цветы большого города</a></p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Footer End -->
+			
+		</div><!-- / Wrapper End -->
+		
+		
+		<!-- Scroll to top -->
+		<span class="totop"><a href="items.html#"><i class="fa fa-angle-up"></i></a></span> 
+		
+		
+		
+		
+		</script>
+	</body>	
+</html>

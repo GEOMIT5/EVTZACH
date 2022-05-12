@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- Title here -->
+		<title>Интернет магазин цветов.  Доставка букетов цветов на заказ. Заказ букетов и доставка цветов Минск. Цветы большого города.</title>
+		<!-- Description, Keywords and Author -->
+		
+    <meta name="keywords" content="доставка букетов, заказ букетов доставка, доставка букетов цветов, доставка букетов Минск, заказ цветов доставка букетов, доставка букетов, школа флористики,флористы, флористы Минск.">
+    <meta name="description" content="Интернет магазин цветов.  Доставка букетов цветов на заказ. Заказ букетов и доставка цветов Минск.">
+		<meta name="author" content="Ziganshina Alfiya">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        
+        
+         <!-- Styles -->
+        <style>
+		
+		
+		
+		/* Portfolio */
+.portfolio {
+	margin-top: 20px;
+}
+.portfolio .col-md-3{
+	
+	margin-right: 0;
+	margin-left: 0;
+}
+.portfolio > figure {
+	position: relative;
+	overflow: hidden;
+}
+.portfolio > figure img {
+	max-width: 100%;
+	display: block;
+}
+.portfolio figcaption {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+
+	left: 0;
+	top: 0;
+
+	background-color: rgba(58,63,67,.8);
+	padding: 10%;
+
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+
+	-webkit-transition: all 350ms;
+	-moz-transition: all 350ms;
+	-o-transition: all 350ms;
+	transition: all 350ms;
+}
+.portfolio figcaption h4 {
+	color: #fff;
+}
+.portfolio figcaption p {
+	font-size: 0.929em;
+	color: #fff;
+}
+.portfolio > figure:hover figcaption {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+}
+		
+		
+/* Navgation */
+.nav-menu, 
+.portfolio > figure.col-md-3{
+	display: none;
+}
+label {
+	padding: 5px 10px;
+	color: #3a3f43;
+	cursor: pointer;
+	display: inline-block;
+}
+.nav-menu:checked + label {
+	color: #fff;
+	background-color: #eb2029;
+	border-radius: 3px;
+}
+#all:checked ~ .portfolio .all,
+#posters:checked ~ .portfolio .poster,
+#illustrations:checked ~ .portfolio .illustration,
+#typography:checked ~ .portfolio .typography,
+#packaging:checked ~ .portfolio .package {
+	display: block;
+}		
+	
+	
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	label {
+		display: none;
+	}
+
+	.container1 {
+		width: 100%;
+	}
+
+	.portfolio .col-md-3 { 
+    	width: 25%;
+    }
+	.portfolio .all {
+		margin-bottom: 15px;
+	}
+	.portfolio > figure:before {
+		content: attr(data-category);
+		font-size: 1em;
+		padding: 8px;
+		width: 100%;
+		color: #fff;
+		display: block;
+		font-weight: bold;
+		text-transform: capitalize;
+		background-color: rgba(42,47,51,0.8);
+		position: absolute;
+	}
+	.portfolio figcaption {
+		position: relative;
+		opacity: 1;
+
+		-webkit-transform: translateX(0%);
+		-moz-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+		-o-transform: translateX(0%);
+		transform: translateX(0%);
+
+		background-color: #3a3f43;
+	}
+	.portfolio figure:nth-child(odd) figcaption {
+		background-color: #2a2f33;
+	}
+	
+	
+}		
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .portfolio .col-md-3 { 
+    	width: 100%;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+
+    .portfolio .col-md-3  { 
+    	width: 100%;
+    }
+ 
+  
+	
+
+
+	
+	
+		
+		
+		</style>
+        
+        
+        
+        
+        
+        
+		<!-- Styles -->
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+		<link href="css/settings.css" rel="stylesheet">		
+		<!-- Custom CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		<!--[if IE]><link rel="stylesheet" href="css/ie-style.css"><![endif]-->
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="index.html#">
+	</head>
+	
+	<body>
+		
+			
+		<!-- Shopping cart Modal -->
+		<div class="modal fade" id="shoppingcart1" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Корзина</h4>
+					</div>
+					<div class="modal-body">
+						<!-- Items table -->
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Наименование</th>
+									<th>Количество</th>
+									<th>Цена</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="index.html#">Букет "Весна"</a></td>
+									<td>1</td>
+									<td>115 р</td>
+								</tr>
+								<tr>
+									<td><a href="index.html#">Букет "Кудряшка Сью"</a></td>
+									<td>1</td>
+									<td>166,50 руб</td>
+								</tr>
+								<tr>
+									<td><a href="index.html#">Букет для невесты</a></td>
+									<td>1</td>
+									<td>175,00 руб</td>
+								</tr>
+								<tr>
+									<th></th>
+									<th>Всего</th>
+									<th>456,5 р</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
+						<button type="button" class="btn btn-info"><a href="checkout.html">Оформить заказ </a></button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<!-- Model End -->
+		
+		<!-- Page Wrapper -->
+		<div class="wrapper">
+		
+			<!-- Header Start -->
+			
+			<div class="header">
+				<div class="container">
+					<!-- Header top area content -->
+					<div class="header-top">
+						<div class="row">
+							<div class="col-md-4 col-sm-4">
+								<!-- Header top left content contact -->
+								<div class="header-contact">
+									<!-- Contact number -->
+									<span> <i class="fa fa-phone red"></i>+8(029)321-75-99</span>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<!-- Header top right content search box -->
+								<div class=" header-search">
+									<form class="form" role="form">
+										<div class="input-group">
+										  <input type="text" class="form-control" placeholder="Поиск...">
+										  <span class="input-group-btn">
+											<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+										  </span>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<!-- Button Kart -->
+								<div class="btn-cart-md">
+									<a class="cart-link" href="index.html#">
+                                  
+
+										<!-- Image 
+										<img class="img-responsive" src="img/cart.png" alt="" /> -->
+										<!-- Heading -->
+										<h4>Корзина</h4>
+									
+										<div class="clearfix"></div>
+									</a>
+									<ul class="cart-dropdown" role="menu">
+										<li>	
+											<!-- Cart items for shopping list -->
+											<div class="cart-item">
+												<!-- Item remove icon -->
+												<a href="index.html#"><i class="fa fa-times"></i></a>
+												<!-- Image -->
+												<img class="img-responsive img-rounded" src="img/nav-menu/nav1.jpg" alt="" />
+												<!-- Title for purchase item -->
+												<span class="cart-title"><a href="index.html#">Букет "Весна"</a></span>
+												<!-- Cart item price -->
+												<span class="cart-price pull-right red">115,00 руб</span>
+												<div class="clearfix"></div>
+											</div>
+										</li>
+										<li>
+											<!-- Cart items for shopping list -->
+											<div class="cart-item">
+												<!-- Item remove icon -->
+												<a href="index.html#"><i class="fa fa-times"></i></a>
+												<!-- Image -->
+												<img class="img-responsive img-rounded" src="img/nav-menu/nav2.jpg" alt="" />
+												<!-- Title for purchase item -->
+												<span class="cart-title"><a href="index.html#">Букет "Кудряшка Сью"</a></span>
+												<!-- Cart item price -->
+												<span class="cart-price pull-right red">166,50 руб</span>
+												<div class="clearfix"></div>
+											</div>
+										</li>
+										<li>
+											<!-- Cart items for shopping list -->
+											<div class="cart-item">
+												<!-- Item remove icon -->
+												<a href="index.html#"><i class="fa fa-times"></i></a>
+												<!-- Image -->
+												<img class="img-responsive img-rounded" src="img/nav-menu/nav3.jpg" alt="" />
+												<!-- Title for purchase item -->
+												<span class="cart-title"><a href="index.html#">Букет для невесты</a></span>
+												<!-- Cart item price -->
+												<span class="cart-price pull-right red">175,00 руб</span>
+												<div class="clearfix"></div>
+											</div>
+										</li>
+										<li>
+											<!-- Cart items for shopping list -->
+											<div class="cart-item">
+												<a class="btn btn-danger" data-toggle="modal" href="index.html#shoppingcart1">Оформить заказ</a>
+											</div>
+										</li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+								
+								<div class="btn-cart-md">
+									<a class="cart-link" href="index.html#">
+                                  
+
+									
+								
+								
+								
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-5">
+							<!-- Link -->
+							<a href="index.html">
+								<!-- Logo area -->
+								<div class="logo">
+									<img class="img-responsive" src="img/logo.png" alt="" />
+									<!-- Heading -->
+									<h1></h1>
+									<!-- Paragraph -->
+									<p>Facility ester expedite instinct.</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-8 col-sm-7">
+							<!-- Navigation -->
+							<nav class="navbar navbar-default navbar-right" role="navigation">
+								<div class="container-fluid">
+									<!-- Brand and toggle get grouped for better mobile display -->
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
+									</div>
+
+									<!-- Collect the nav links, forms, and other content for toggling -->
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+											
+										<li> <a href="items.html">Магазин</a></li>
+										<li> <a href="gallery.html">Портфолио</a></li>
+																
+											<li><a href="aboutus.html"> Флористы</a></li>
+										</ul>
+									</div><!-- /.navbar-collapse -->
+								</div><!-- /.container-fluid -->
+							</nav>
+						</div>
+					</div>
+				</div> <!-- / .container -->
+			</div>
+			
+			<!-- Header End -->
+			
+			
+			
+			<!-- Main Content -->
+			<div class="main-content">
+			
+				
+				
+                
+           
+              <form class="content container " >
+			  }
+<!-- start navigation -->
+<input class="nav-menu" id="all" type="radio" name="filter" checked="checked"/>
+<label for="all">Все</label>
+
+<input class="nav-menu" id="illustrations" type="radio" name="filter"/>
+<label for="illustrations">Букеты</label>
+
+<input class="nav-menu" id="posters" type="radio" name="filter"/>
+<label for="posters">Композиции</label>
+
+<input class="nav-menu" id="typography" type="radio" name="filter"/>
+<label for="typography">Корзины</label>
+
+<input class="nav-menu" id="packaging" type="radio" name="filter"/>
+<label for="packaging">Сезонные предложения</label>
+<!-- end navigation -->
+
+<!-- start portfolio -->
+<section class="portfolio">
+	<figure class="col-md-3 all poster" data-category="poster">
+		<img src="images/image-1.jpg"/>
+		<figcaption>
+			<h4>Lorem Ipsum</h4>
+			 <span class="hot-tag "> 150р</span>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+            <button class="btn btn-primary" type="button">Купить</button>
+		</figcaption>
+	</figure>
+	</figure>
+	<figure class="col-md-3  all illustration" data-category="illustration">
+		<img src="images/image-2.jpg"/>
+		<figcaption>
+			<h4>Lorem Ipsum</h4>
+			 <span class="hot-tag "> 150р</span>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+            <button class="btn btn-primary" type="button">Купить</button>
+		</figcaption>
+	</figure>
+	</figure>
+	<figure class="col-md-3  all poster" data-category="poster">
+		<img src="images/image-3.jpg"/>
+		<figcaption>
+			<h4>Lorem Ipsum</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+		</figcaption>
+	</figure>
+	<figure class="col-md-3 all typography" data-category="typography">
+		<img src="images/image-4.jpg"/>
+		<figcaption>
+			<h4>Lorem Ipsum</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+		</figcaption>
+	</figure>
+	<figure class="col-md-3 all illustration" data-category="illustration">
+		<img src="images/image-5.jpg"/>
+		<figcaption>
+			<h4>Lorem Ipsum</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+		</figcaption>
+	</figure>
+	<figure class="col-md-3 all poster" data-category="poster">
+		<img src="images/image-6.jpg"/>
+		<figcaption>
+			<h4>Lorem Ipsum</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+		</figcaption>
+	</figure>
+	<figure class="col-md-3 all illustration" data-category="illustration">
+		<img src="images/image-7.jpg"/>
+		<figcaption>
+			<h4>Lorem Ipsum</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+		</figcaption>
+	</figure>
+	<figure class="col-md-3 all typography" data-category="typography">
+		<img src="images/image-8.jpg"/>
+		<figcaption>
+			<h4>Lorem Ipsum</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+		</figcaption>
+	</figure>
+	
+</section>
+<!-- end portfolio -->
+</form>
+<!-- end container -->
+                
+                
+                
+                
+                
+                
+				<!-- Services Start -->
+					
+				<div class="dishes padd">
+					<div class="container">
+						<!-- Default Heading -->
+						<div class="default-heading">
+							
+							<!-- Heading -->
+							<h2>Наши Услуги</h2>
+							<!-- Paragraph -->
+							<p>В «Цветах нашего города» вы можете заказать цветы с доставкой по Перми. От Вас требуется лишь выбрать букет, а все остальное мы берем на себя. Если Вы не можете определиться, какая именно композиция лучше всего подходит важному событию, вы всегда можете связаться с нами насчет оформления цветами по телефону +8(029) 321 75 99.</p>
+							<!-- Border -->
+							<div class="border"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 col-sm-6">	
+								<div class="dishes-item-container">
+									<!-- Image Frame -->
+									<div class="img-frame">
+										<!-- Image -->
+										<img src="img/services/serv.jpg" class="img-responsive" alt="" />
+										<!-- Block for on hover effect to image -->
+										<div class="img-frame-hover">
+											<!-- Hover Icon -->
+											<a href="index.html#"><i class="fa fa-spinner"></i></a>
+										</div>
+									</div>
+									<!-- Dish Details -->
+									<div class="dish-details">
+										<!-- Heading -->
+										<h3>Букеты и композиции</h3>
+										<!-- Paragraph -->
+										<p>At vero eos et accusal gusto for ides residuum lores.</p>
+										<!-- Button -->
+										<a href="index.html#" class="btn btn-danger btn-sm">Узнать больше</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="dishes-item-container">
+									<!-- Image Frame -->
+									<div class="img-frame">
+										<!-- Image -->
+										<img src="img/services/serv.jpg" class="img-responsive" alt="" />
+										<!-- Block for on hover effect to image -->
+										<div class="img-frame-hover">
+											<!-- Hover Icon -->
+											<a href="index.html#"><i class="fa fa-spinner"></i></a>
+										</div>
+									</div>
+									<!-- Dish Details -->
+									<div class="dish-details">
+										<!-- Heading -->
+										<h3>Оформление свадеб, торжеств </h3>
+										<!-- Paragraph -->
+										<p>At vero eos et accusal gusto for ides residuum lores.</p>
+										<!-- Button -->
+										<a href="index.html#" class="btn btn-danger btn-sm">Узнать больше</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="dishes-item-container">
+									<!-- Image Frame -->
+									<div class="img-frame">
+										<!-- Image -->
+										<img src="img/services/serv.jpg" class="img-responsive" alt="" />
+										<!-- Block for on hover effect to image -->
+										<div class="img-frame-hover">
+											<!-- Hover Icon -->
+											<a href="index.html#"><i class="fa fa-spinner"></i></a>
+										</div>
+									</div>
+									<!-- Dish Details -->
+									<div class="dish-details">
+										<!-- Heading -->
+										<h3>Курсы флористики</h3>
+										<!-- Paragraph -->
+										<p>At vero eos et accusal gusto for ides residuum lores.</p>
+										<!-- Button -->
+										<a href="index.html#" class="btn btn-danger btn-sm">Узнать больше</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="dishes-item-container">
+									<!-- Image Frame -->
+									<div class="img-frame">
+										<!-- Image -->
+										<img src="img/services/serv.jpg" class="img-responsive" alt="" />
+										<!-- Block for on hover effect to image -->
+										<div class="img-frame-hover">
+											<!-- Hover Icon -->
+										<a href="index.html#"><i class="fa fa-spinner"></i></a>
+										</div>
+									</div>
+									<!-- Dish Details -->
+									<div class="dish-details">
+										<!-- Heading -->
+										<h3>Доставка</h3>
+										<!-- Paragraph -->
+										<p>At vero eos et accusal gusto for ides residuum lores.</p>
+										<!-- Button -->
+										<a href="index.html#" class="btn btn-danger btn-sm">Узнать больше</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+				
+				<!-- servuces End -->
+				
+                
+                <div class="menu padd">
+					<div class="container">
+						<!-- Default Heading -->
+						<div class="default-heading">
+							
+							<!-- Heading -->
+							<h2>Наши работы</h2>
+							<!-- Paragraph -->
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<!-- Border -->
+							<div class="border"></div>
+						</div>
+						<!-- Menu content container -->
+                
+                
+                
+						</div> <!-- /Menu container end -->
+					</div>
+			</div>
+				
+				<!-- Menu End -->
+				
+                
+                
+                
+                
+               <form class="content container " >
+
+<!-- start navigation -->
+<input class="nav-menu" id="all" type="radio" name="filter" checked="checked"/>
+<label for="all">Все</label>
+
+<input class="nav-menu" id="illustrations" type="radio" name="filter"/>
+<label for="illustrations">Букеты</label>
+
+<input class="nav-menu" id="posters" type="radio" name="filter"/>
+<label for="posters">Композиции</label>
+
+<input class="nav-menu" id="typography" type="radio" name="filter"/>
+<label for="typography">Корзины</label>
+
+<input class="nav-menu" id="packaging" type="radio" name="filter"/>
+<label for="packaging">Сезонные предложения</label>
+<!-- end navigation -->
+
+<!-- start portfolio -->
+<section class="portfolio">
+	<figure class="col-md-3 all poster" data-category="poster">
+		<img src="images/image-1.jpg"/>
+		<figcaption>
+			<h4>Lorem Ipsum</h4>
+			 <span class="hot-tag "> 150р</span>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+            <button class="btn btn-primary" type="button">Купить</button>
+		</figcaption>
+	</figure>
+	</figure>
+	<figure class="col-md-3  all illustration" data-category="illustration">
+		<img src="images/image-2.jpg"/>
+		<figcaption>
+			<h4>Lorem Ipsum</h4>
+			 <span class="hot-tag "> 150р</span>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+            <button class="btn btn-primary" type="button">Купить</button>
+		</figcaption>
+	</figure>
+	</figure>
+	<figure class="col-md-3  all poster" data-category="poster">
+		<img src="images/image-3.jpg"/>
+		<figcaption>
+			<h4>Lorem Ipsum</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+		</figcaption>
+	</figure>
+	<figure class="col-md-3 all typography" data-category="typography">
+		<img src="images/image-4.jpg"/>
+		<figcaption>
+			<h4>Lorem Ipsum</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+		</figcaption>
+	</figure>
+	<figure class="col-md-3 all illustration" data-category="illustration">
+		<img src="images/image-5.jpg"/>
+		<figcaption>
+			<h4>Lorem Ipsum</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+		</figcaption>
+	</figure>
+	<figure class="col-md-3 all poster" data-category="poster">
+		<img src="images/image-6.jpg"/>
+		<figcaption>
+			<h4>Lorem Ipsum</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+		</figcaption>
+	</figure>
+	<figure class="col-md-3 all illustration" data-category="illustration">
+		<img src="images/image-7.jpg"/>
+		<figcaption>
+			<h4>Lorem Ipsum</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+		</figcaption>
+	</figure>
+	<figure class="col-md-3 all typography" data-category="typography">
+		<img src="images/image-8.jpg"/>
+		<figcaption>
+			<h4>Lorem Ipsum</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie lobortis magna eget sagittis.</p>
+		</figcaption>
+	</figure>
+	
+</section>
+<!-- end portfolio -->
+</form>
+<!-- end container -->
+            
+            
+                
+                
+                
+                
+                
+                
+                
+			
+				<!-- Pricing Start -->
+				
+				<div class="pricing padd">
+					<div class="container">
+						<!-- Default Heading -->
+						<div class="default-heading">
+							<!-- Crown image -->
+							<!--<img class="img-responsive" src="img/crown.png" alt="" />-->
+							<!-- Heading -->
+							<h2>Особые предложения</h2>
+							<!-- Paragraph -->
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<!-- Border -->
+							<div class="border"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<!-- Pricing list Item -->
+								<div class="pricing-item">
+									<!-- Image -->
+									<a href="index.html#"><img class="img-responsive img-thumbnail" src="img/offers/ofer1.jpg" alt="" /></a>
+									<!-- Pricing item details -->
+									<div class="pricing-item-details">
+										<!-- Heading -->
+										<h3><a href="index.html#">Корзинка "Шарм"</a></h3>
+										<!-- Paragraph -->
+										<p>Изысканное цветовое решение очаровывает и завораживает своим шармом....</p>
+										<!-- Buy link -->
+										<a class="btn btn-danger pull-right" href="index.html#">Купить сейчас</a>
+										<div class="clearfix"></div>
+									</div>
+									<!-- Tag -->
+									<span class="hot-tag br-red">1050р</span>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<!-- Pricing list Item -->
+								<div class="pricing-item">
+									<!-- Image -->
+									<a href="index.html#"><img class="img-responsive img-thumbnail" src="img/offers/ofer2.jpg" alt="" /></a>
+									<!-- Pricing item details -->
+									<div class="pricing-item-details">
+										<!-- Heading -->
+										<h3><a href="index.html#">Букет невесты</a></h3>
+										<!-- Paragraph -->
+										<p>These cases are perfectly simple and distil and when nothing adipose slicing consecrate prevents...</p>
+										<!-- Buy link -->
+										<a class="btn btn-danger pull-right" href="index.html#">Купить сейчас</a>
+										<div class="clearfix"></div>
+									</div>
+									<!-- Tag -->
+									<span class="hot-tag br-lblue">200р</span>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="clearfix visible-md"></div>
+							<div class="col-md-6 col-sm-6">
+								<!-- Pricing list Item -->
+								<div class="pricing-item">
+									<!-- Image -->
+									<a href="index.html#"><img class="img-responsive img-thumbnail" src="img/offers/ofer4.jpg" alt="" /></a>
+									<!-- Pricing item details -->
+									<div class="pricing-item-details">
+										<!-- Heading -->
+										<h3><a href="index.html#">Букет на каркасе «Лесная сказка»</a></h3>
+										<!-- Paragraph -->
+										<p>Контраст нежных цветов и колючего лапника создает сказочное впечатление...</p>
+										<!-- Buy link -->
+										<a class="btn btn-danger pull-right" href="index.html#">Купить сейчас</a>
+										<div class="clearfix"></div>
+									</div>
+									<!-- Tag -->
+									<span class="hot-tag br-green">2000р</span>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<!-- Pricing list Item -->
+								<div class="pricing-item">
+									<!-- Image -->
+									<a href="index.html#"><img class="img-responsive img-thumbnail" src="img/offers/ofer5.jpg" alt="" /></a>
+									<!-- Pricing item details -->
+									<div class="pricing-item-details">
+										<!-- Heading -->
+										<h3><a href="index.html#">Ирисы</a></h3>
+										<!-- Paragraph -->
+										<p>Просто Ирисы...</p>
+										<!-- Buy link -->
+										<a class="btn btn-danger pull-right" href="index.html#">Купить сейчас</a>
+										<div class="clearfix"></div>
+									</div>
+									<!-- Tag -->
+									<span class="hot-tag br-red">800р</span>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Pricing End -->
+				
+				
+				<!-- Testimonial Start -->
+				
+				<div class="testimonial padd">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<!-- BLock heading -->
+								<h3>Новинки</h3>
+								<!-- Flex slider Content -->
+								<div class="flexslider-recent">
+									<ul class="slides">
+										<li>
+											<!-- Image for background -->
+											<img class="img-responsive" src="img/dish/dish9.jpg" alt="" />
+											<!-- Slide content -->
+											<div class="slider-content">
+												<!-- Heading -->
+												<h4>Lore Ipsum</h4>
+												<!-- Paragraph -->
+												<p>Sed ut perspiciatis unde omnis iste natus error sitvolua rchitecto beatae vitae dicta sunt explicabo eaque ipsa quae ab illo inventore.</p>
+											</div>
+										</li>
+										<li>
+											<!-- Image for background -->
+											<img class="img-responsive" src="img/dish/dish10.jpg" alt="" />
+											<!-- Slide content -->
+											<div class="slider-content">
+												<!-- Heading -->
+												<h4>Букет "Весна"</h4>
+												<!-- Paragraph -->
+												<p>Sed ut perspiciatis unde omnis iste natus error sitvolua rchitecto beatae vitae dicta sunt explicabo eaque ipsa quae ab illo inventore.</p>
+											</div>
+										</li>
+										<li>
+											<!-- Image for background -->
+											<img class="img-responsive" src="img/dish/dish11.jpg" alt="" />
+											<!-- Slide content -->
+											<div class="slider-content">
+												<!-- Heading -->
+												<h4>Lorem Ipsum</h4>
+												<!-- Paragraph -->
+												<p>Sed ut perspiciatis unde omnis iste natus error sitvolua rchitecto beatae vitae dicta sunt explicabo eaque ipsa quae ab illo inventore.</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<!-- BLock heading -->
+								<h3>Отзывы</h3>
+								<!-- Flex slider Content -->
+								<div class="flexslider-testimonial">
+									<ul class="slides">
+										<li>
+											<!-- Testimonial Content -->
+											<div class="testimonial-item">
+												<!-- Quote -->
+												<span class="quote lblue">&#8220;</span> 
+												<!-- Your comments -->
+												<blockquote>
+													<!-- Paragraph -->
+													<p>Уважаемые флористы! Спасибо Вам большое за ваше творчество! Всегда с удовольствием прихожу в Ваш салон за цветами!</p>
+												</blockquote>
+												<!-- Heading with image -->
+												<h4><img class="img-responsive img-circle" src="" alt="" /> Алексей<span></span></h4>
+												<div class="clearfix"></div>
+											</div>
+										</li>
+										<li>
+											<!-- Testimonial Content -->
+											<div class="testimonial-item">
+												<!-- Quote -->
+												<span class="quote lblue">&#8220;</span> 
+												<!-- Your comments -->
+												<blockquote>
+													<!-- Paragraph -->
+													<p> Дорогие флористы и сотрудники бутика "Цветы большого города!Какую красоту вы создаете! Всегда с удовольствием покупаю букеты для сотрудников нашей фирмы.Спасибо.Посмотрела Ваш сайт.Просто прелесть.Молодцы!</p>
+												</blockquote>
+												<!-- Heading with image -->
+												<h4><img class="img-responsive img-circle" src="" alt="" /> Галина<span></span></h4>
+												<div class="clearfix"></div>
+											</div>
+										</li>
+										<li>
+											<!-- Testimonial Content -->
+											<div class="testimonial-item">
+												<!-- Quote -->
+												<span class="quote lblue">&#8220;</span> 
+												<!-- Your comments -->
+												<blockquote>
+													<!-- Paragraph -->
+													<p>Уважаемые флористы! Спасибо Вам большое за ваше творчество! Всегда с удовольствием прихожу в Ваш салон за цветами!</p>
+												</blockquote>
+												<!-- Heading with image -->
+												<h4><img class="img-responsive img-circle" src="" alt="" /> Алексей<span></span></h4>
+												<div class="clearfix"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Testimonial End -->
+				
+				
+			</div><!-- / Main Content End -->	
+			
+			<!-- Footer Start -->
+			
+			<div class="footer padd">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<!-- Footer widget -->
+							<div class="footer-widget">
+								
+								
+								<!-- Heading -->
+								<h4>Способы оплаты и доставка</h4>
+								<!-- Images -->
+								
+								<a href="index.html#"><img class="payment img-responsive" src="img/payment/mastercard.gif" alt="" /></a>
+								<a href="index.html#"><img class="payment img-responsive" src="img/payment/paypal.gif" alt="" /></a>
+								<a href="index.html#"><img class="payment img-responsive" src="img/payment/visa.gif" alt="" /></a>
+								<a href="index.html#"><img class="payment img-responsive" src="img/payment/worldpay.gif" alt="" /></a>
+							</div> <!--/ Footer widget end -->
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<!-- Footer widget -->
+							<div class="footer-widget">
+								<!-- Heading -->
+								<h4>Интерьер магазина</h4>
+								<!-- Images -->
+                                
+                                
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter1.jpg" alt="" /></a>
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter2.jpg" alt="" /></a>
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter3.jpg" alt="" /></a>
+                                <a href="index.html#"><img class="dish img-responsive" src="img/dish/inter1.jpg" alt="" /></a>
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter2.jpg" alt="" /></a>
+								<a href="index.html#"><img class="dish img-responsive" src="img/dish/inter3.jpg" alt="" /></a>
+							
+							</div> <!--/ Footer widget end -->
+						</div>
+						<div class="clearfix visible-sm"></div>
+						<div class="col-md-4 col-sm-6">
+							
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<!-- Footer widget -->
+							<div class="footer-widget">
+								<!-- Heading -->
+								<h4>Контакты</h4>
+								<div class="contact-details">
+									<!-- Address / Icon -->
+                                    <address>
+  <strong><h3>Цветы большого города</h3></strong><br>
+  220000, г.Минск, ул.Пушкина,13 <br>
+ <br>
+ 
+  <abbr title="Phone">Телефон</abbr> +8(029)321-75-99
+  
+</address>
+
+<address>
+  <strong>Митенёв Георгий</strong><br>
+  <a href="mailto:#">mitenev@gmail.com</a>
+</address>
+									
+						</div>
+					</div>
+					<!-- Copyright -->
+					<div class="footer-copyright">
+						<!-- Paragraph -->
+                        <div class="social">	
+		
+						<p>&copy; Copyright 2022 <a href="index.html#">Цветы большого города</a></p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Footer End -->
+			
+		</div><!-- / Wrapper End -->
+		
+		
+		<!-- Scroll to top -->
+		<span class="totop"><a href="index.html#"><i class="fa fa-angle-up"></i></a></span> 
+		
+		
+		
+		
+		</script>
+	</body>	
+</html>
